@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+/* gloabal variable */
+:root{   
+   --main-bg-color: rgb(0, 135, 255);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{   
+    background: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 88px;
+    padding: 0 25px;
+}
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-weight: bold;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    height: 27px;
+    border-radius: 2px;
+    margin: 0 16px 0 56px;
+    padding: 0 12px;
+}
+.search button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+.slider{  
+    width: 80vw;
+    margin: 12px auto;
+    overflow: scroll;
+}
+
+/* .slider img{
+    height: 350px;
+    width: 1000px;
+} */
+
+.card{
+    max-width: 91vw;
+    margin: 37px auto;  
+    font-family: 'Ubuntu', sans-serif;
+}
+.cards{
+    display: flex;
+    overflow-x: scroll;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.card h2{
+     font-family: 'Lato', sans-serif;
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh);
+}
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+/* If we change the background color in gloabal-variable then that same color will be automatically applied to the header and footer and in this way we can reuse the color defined in gloabal variable and in this way we can also change the color of whole website . */
+
+/*  min-height: calc(100vh - 58px - 12vh); If we set the minimum-height of container like this then we will don't get any scrol bar on our viewport. */
+
+/* nav ul li a:hover If any one hovers on link then the weight of links will be change to bold */
