@@ -56,16 +56,10 @@ nav ul li a:hover{
     font-weight: 900;
 }
 .slider{  
-    width: auto;
-    height: auto;
+    width: 80vw;
     margin: 12px auto;
     overflow: scroll;
 }
-
-/* .slider img{
-    height: 350px;
-    width: 1000px;
-} */
 
 .card{
     max-width: 91vw;
@@ -94,9 +88,3 @@ footer{
     color: white;
     font-family: 'Lato', sans-serif;
 }
-
-/* If we change the background color in gloabal-variable then that same color will be automatically applied to the header and footer and in this way we can reuse the color defined in gloabal variable and in this way we can also change the color of whole website . */
-
-/*  min-height: calc(100vh - 58px - 12vh); If we set the minimum-height of container like this then we will don't get any scrol bar on our viewport. */
-
-/* nav ul li a:hover If any one hovers on link then the weight of links will be change to bold */
